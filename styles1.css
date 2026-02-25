@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+:root {
+  --primary-color: #4e1483;
+  --dark-gray: #9ca3af;
+  --off-white: #e9ecef;
+  --light-blue: #f8f9fa;
+  --white: white;
+}
+
+body {
+  margin: 0px;
+  background-color: var(--light-blue);
+  font-family: "Lugrasimo", cursive;
+  font-family: "Roboto Slab", serif;
+  line-height: 1.75rem;
+}
+
+.section h2 span,
+.short-line {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+hr {
+  margin: 2rem 0rem;
+}
+
+.margin-md {
+  margin: 2rem 0rem;
+}
+
+/** container  **/
+.container {
+  padding: 0rem 1rem;
+}
+
+article {
+  max-width: 800px;
+  margin: auto;
+}
+
+.container-center {
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* links */
+.link {
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.link-primary {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: var(--white);
+  display: block;
+  max-width: 140px;
+  margin: 1rem 1rem 1rem 0rem;
+  text-align: center;
+}
+
+.link-secondary {
+  color: var(--primary-color);
+  border-radius: 0.5rem;
+  border: 1px solid var(--primary-color);
+  display: block;
+  max-width: 140px;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+.list-non-bullet {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+
+.list-item-inline {
+  display: inline;
+}
+
+/* flexbox */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* navigation bar */
+.navigation {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation .nav-brand {
+  font-size: 1.7rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navigation .nav-pills {
+  text-align: right;
+}
+
+.navigation .link {
+  color: var(--white);
+  font-size: 1.14rem;
+}
+
+/* .navigation .link-active {
+  font-weight: 600;
+} */
+
+/* header */
+.hero {
+  padding: 1rem;
+  padding-top: 1rem;
+}
+
+.hero-img {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.hero-heading {
+  text-align: center;
+  padding-top: 1rem;
+  color: var(--dark-gray);
+}
+
+.hero-heading .header-inverted {
+  color: var(--primary-color);
+}
+
+/* section class */
+.section {
+  padding: 2rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 0.5rem auto;
+}
+
+.ow {
+  background-color: var(--off-white);
+}
+
+/* blog css */
+.blog {
+  background-color: var(--light-blue);
+  margin: 2rem;
+}
+
+/* footer class */
+
+.footer {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  border-top-right-radius: 1rem;
+}
+
+.footer .footer-header {
+  font-size: 1.2rem;
+}
+
+.footer .link {
+  color: var(--white);
+  font-size: 1.7rem;
+}
+
+.footer .ul {
+  padding-inline-start: 0px;
+}
+
+.showcase-blog {
+  padding-bottom: 6rem;
+}
+
+#container {
+  background-color: var(--off-white);
+  display: block;
+}
+
+td {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+}
+
+.list-container li {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid var(--primary-color);
+  color: black;
+  background-color: var(--light-blue);
+  border-radius: 5px;
+  box-shadow: 5px 3px 0px 0px var(--primary-color);
+}
+
+.description {
+  text-align: center;
+}
+
+.about-section {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: self-start;
+  gap: 1rem;
+}
+
+.about {
+  text-align: justify;
+}
+
+.about-section article {
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+}
+
+.about-section .hero-img {
+  max-width: 350px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+p.hero-heading {
+  font-size: 3.5rem;
+  margin: 0 auto 2.3rem auto;
+  font-weight: 600;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+.about {
+  line-height: 2rem !important;
+}
