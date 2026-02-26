@@ -178,6 +178,20 @@ img {
   position: relative;
   overflow: hidden;
 }
+.hero-image{
+width:150px !important;
+height: 150px !important;
+object-fit: cover;
+border-radius:50%;
+display:block;
+margin:0 auto 20px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+transition:0.3s ease;
+}
+.hero-image:hover{
+  transform:scale(1.05);
+ 
+}
 
 .hero-bg-circles {
   position: absolute;
