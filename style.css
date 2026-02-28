@@ -178,19 +178,21 @@ img {
   position: relative;
   overflow: hidden;
 }
-.hero-image{
-width:150px !important;
-height: 150px !important;
-object-fit: cover;
-border-radius:50%;
-display:block;
-margin:0 auto 20px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-transition:0.3s ease;
+
+.hero-image {
+  width: 150px !important;
+  height: 150px !important;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
 }
-.hero-image:hover{
-  transform:scale(1.05);
- 
+
+.hero-image:hover {
+  transform: scale(1.05);
+
 }
 
 .hero-bg-circles {
@@ -1032,6 +1034,29 @@ transition:0.3s ease;
   color: var(--text-muted);
   margin: 0;
   line-height: 1.75;
+}
+
+/* Certificate group heading */
+.cert-group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: 36px 0 20px;
+  background: var(--accent-soft);
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  position: relative;
+}
+
+.cert-group-title i {
+  font-size: 1rem;
+  color: var(--primary-light);
 }
 
 /* ========================================
