@@ -101,10 +101,32 @@ const style = document.createElement('style');
 style.textContent = `@keyframes ripple { to { transform: scale(2.5); opacity: 0; } }`;
 document.head.appendChild(style);
 
-document.querySelectorAll('.btn-hero, .btn-hero-outline, .btn-project, .btn-contact').forEach((btn) => {
+document.querySelectorAll('.btn-hero, .btn-hero-outline, .btn-project, .btn-live, .btn-contact').forEach((btn) => {
   btn.style.overflow = 'hidden';
   btn.style.position = 'relative';
   btn.addEventListener('click', createRipple);
+});
+
+/* ── Project Filter Buttons ── */
+const filterBtns = document.querySelectorAll('.filter-btn');
+const projectItems = document.querySelectorAll('.project-item');
+
+filterBtns.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach((b) => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const filter = btn.getAttribute('data-filter');
+
+    projectItems.forEach((item) => {
+      const cats = item.getAttribute('data-category') || '';
+      if (filter === 'all' || cats.includes(filter)) {
+        item.classList.remove('filter-hidden');
+      } else {
+        item.classList.add('filter-hidden');
+      }
+    });
+  });
 });
 
 /* ── Hackathon list item entrance animation ── */

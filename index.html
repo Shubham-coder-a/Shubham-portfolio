@@ -87,65 +87,142 @@
             <div class="section-header text-center reveal">
                 <span class="section-tag">Real-World Impact</span>
                 <h2 class="section-title">Featured Projects</h2>
-                <p class="section-sub">Building solutions that solve real problems</p>
+                <p class="section-sub">Production-ready solutions built with modern tech stacks</p>
             </div>
 
-            <div class="row g-4 justify-content-center mt-2">
+            <!-- Filter Buttons -->
+            <div class="project-filter-bar d-flex justify-content-center flex-wrap gap-2 mt-4 mb-2 reveal">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fa-solid fa-grip me-2"></i>All Projects
+                </button>
+                <button class="filter-btn" data-filter="live">
+                    <span class="live-dot me-2"></span>Live Projects
+                </button>
+                <button class="filter-btn" data-filter="opensource">
+                    <i class="fa-brands fa-github me-2"></i>Open Source
+                </button>
+            </div>
 
-                <!-- Project 1: RapidAid – FEATURED -->
-                <div class="col-lg-6 reveal">
-                    <div class="project-card project-card-featured h-100 d-flex flex-column">
-                        <div class="featured-ribbon">⭐ Featured Project</div>
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="project-icon-wrap">
-                                <i class="fa-solid fa-shield-halved"></i>
+            <div class="row g-4 justify-content-center mt-2" id="projectGrid">
+
+                <!-- ── 1. RapidAid – HERO PROJECT (Full Width) ── -->
+                <div class="col-12 reveal project-item" data-category="opensource" style="--reveal-delay:0.05s">
+                    <div class="hero-card-wrapper">
+                        <div class="hero-project-card">
+                            <div class="hero-ribbon-new">
+                                <i class="fa-solid fa-star me-1"></i> Hero Project
                             </div>
-                            <div class="project-badge">Android App</div>
+                            <div class="hero-card-content">
+                                <!-- LEFT COLUMN: Title & Impact -->
+                                <div class="hero-left-col">
+                                    <div class="d-flex align-items-center gap-3 mb-4">
+                                        <div class="hero-icon">
+                                            <i class="fa-solid fa-shield-halved"></i>
+                                        </div>
+                                        <span class="hero-badge">Android App</span>
+                                    </div>
+                                    <h3 class="hero-title">RapidAid – Smart Emergency Response App</h3>
+                                    <div class="hero-impact-box">
+                                        <i class="fa-solid fa-bolt-lightning text-warning mt-1"></i>
+                                        <p><strong>Impact:</strong> Designed to reduce emergency response time using one-tap SOS, auto-SMS alerts, and real-time GPS tracking.</p>
+                                    </div>
+                                </div>
+                                
+                                <!-- RIGHT COLUMN: Features, Tags, Links -->
+                                <div class="hero-right-col">
+                                    <h4 class="hero-section-title">Key Features</h4>
+                                    <ul class="hero-features-list">
+                                        <li><i class="fa-solid fa-circle-check"></i> One-tap SOS Emergency Trigger</li>
+                                        <li><i class="fa-solid fa-circle-check"></i> Auto SMS Alert with Live Location</li>
+                                        <li><i class="fa-solid fa-circle-check"></i> Firebase Auth + Realtime DB</li>
+                                        <li><i class="fa-solid fa-circle-check"></i> Google Maps API Integration</li>
+                                    </ul>
+                                    <div class="hero-tags mt-4">
+                                        <span>Kotlin</span>
+                                        <span>Firebase</span>
+                                        <span>Google Maps API</span>
+                                        <span>Android Studio</span>
+                                    </div>
+                                    <div class="mt-4 pt-2">
+                                        <a href="https://github.com/Shubham-coder-a/RapidAid-Smart-Emergency-Response-App"
+                                            target="_blank" rel="noopener noreferrer" class="btn hero-btn">
+                                            <i class="fa-brands fa-github me-2"></i> Source Code
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h3 class="project-title">RapidAid – Smart Emergency Response App</h3>
-                        <p class="project-impact">
-                            <i class="fa-solid fa-bolt-lightning me-1 text-warning"></i>
-                            <strong>Impact:</strong> Designed to reduce emergency response time using one-tap SOS
-                            alerts.
-                        </p>
-                        <ul class="project-features flex-grow-1">
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Emergency Call Trigger</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>SMS Alert System</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Live Location Sharing</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Firebase Integration</li>
-                        </ul>
-                        <div class="project-tags mt-2">
-                            <span class="tag">Kotlin</span>
-                            <span class="tag">Android Studio</span>
-                            <span class="tag">Firebase</span>
-                            <span class="tag">Google Maps API</span>
-                        </div>
-                        <a href="https://github.com/Shubham-coder-a/RapidAid-Smart-Emergency-Response-App"
-                            target="_blank" rel="noopener noreferrer" class="btn btn-project mt-4" id="rapidaid-link">
-                            <i class="fa-brands fa-github me-2"></i>View Project
-                        </a>
                     </div>
                 </div>
 
-                <!-- Project 2: GitHub Portfolio Analyzer -->
-                <div class="col-md-6 col-lg-3 reveal">
+                <!-- ── 2. Hyperlocal Secondhand Market ── -->
+                <div class="col-md-6 col-lg-4 reveal project-item" data-category="live opensource" style="--reveal-delay:0.1s">
                     <div class="project-card h-100 d-flex flex-column">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="project-icon-wrap project-icon-ai">
-                                <i class="fa-brands fa-github"></i>
+                        <div class="project-card-glow project-card-glow-web"></div>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="project-icon-wrap project-icon-web">
+                                    <i class="fa-solid fa-store"></i>
+                                </div>
+                                <div class="project-badge project-badge-web">Web App</div>
                             </div>
-                            <div class="project-badge project-badge-ai">AI Tool</div>
+                            <span class="project-live-indicator"><span class="live-dot"></span>Live</span>
+                        </div>
+                        <h3 class="project-title">Hyperlocal Secondhand Market</h3>
+                        <p class="project-impact">
+                            <i class="fa-solid fa-bolt-lightning me-1 text-warning"></i>
+                            <strong>Impact:</strong> Peer-to-peer marketplace eliminating middlemen — built &amp; demoed live at a hackathon.
+                        </p>
+                        <ul class="project-features flex-grow-1">
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Direct Buyer–Seller Connect</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Firebase Real-time Database</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Product Listing &amp; Responsive UI</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Full-Stack PHP + MySQL Backend</li>
+                        </ul>
+                        <div class="project-tags mt-2">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">PHP</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-btn-group mt-auto pt-4">
+                            <a href="https://shubham-coder-a.github.io/Hyperlocal-secondhand-market/"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-live" id="hyperlocal-live-link">
+                                🚀 Live Demo
+                            </a>
+                            <a href="https://github.com/Shubham-coder-a/Hyperlocal-secondhand-market"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-project" id="hyperlocal-gh-link">
+                                💻 Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ── 3. GitHub Portfolio Analyzer ── -->
+                <div class="col-md-6 col-lg-4 reveal project-item" data-category="live opensource" style="--reveal-delay:0.15s">
+                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="project-card-glow project-card-glow-ai"></div>
+                        <div class="d-flex align-items-center justify-content-between mb-3">
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="project-icon-wrap project-icon-ai">
+                                    <i class="fa-solid fa-brain"></i>
+                                </div>
+                                <div class="project-badge project-badge-ai">AI Tool / Python</div>
+                            </div>
+                            <span class="project-live-indicator"><span class="live-dot"></span>Live</span>
                         </div>
                         <h3 class="project-title">GitHub Portfolio Analyzer</h3>
                         <p class="project-impact">
                             <i class="fa-solid fa-bolt-lightning me-1 text-warning"></i>
-                            <strong>Impact:</strong> AI-powered tool that evaluates developer GitHub profiles like a
-                            recruiter.
+                            <strong>Impact:</strong> AI-powered tool that evaluates developer profiles the way a recruiter would — scoring repos, skills &amp; activity.
                         </p>
                         <ul class="project-features flex-grow-1">
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Portfolio Score (0–100)</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Repository Analysis</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Language Distribution</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Portfolio Score Engine (0–100)</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Repository Depth Analysis</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Language Distribution Visualization</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Actionable Recruiter-style Insights</li>
                         </ul>
                         <div class="project-tags mt-2">
                             <span class="tag">Python</span>
@@ -153,48 +230,23 @@
                             <span class="tag">GitHub API</span>
                             <span class="tag">Matplotlib</span>
                         </div>
-                        <a href="https://github.com/Shubham-coder-a/GitHub-Portfolio-Analyzer" target="_blank"
-                            rel="noopener noreferrer" class="btn btn-project mt-4" id="gh-analyzer-link">
-                            <i class="fa-brands fa-github me-2"></i>View Project
-                        </a>
+                        <div class="project-btn-group mt-auto pt-4">
+                            <a href="https://dev-profile-analyzer.streamlit.app/"
+                                target="_blank" rel="noopener noreferrer" class="btn btn-live" id="gh-analyzer-live">
+                                🚀 Live Demo
+                            </a>
+                            <a href="https://github.com/Shubham-coder-a/GitHub-Portfolio-Analyzer" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-project" id="gh-analyzer-link">
+                                💻 Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3: Flashcard Quiz App -->
-                <div class="col-md-6 col-lg-3 reveal">
+                <!-- ── 4. Power BI Data Dashboard ── -->
+                <div class="col-md-6 col-lg-4 reveal project-item" data-category="opensource" style="--reveal-delay:0.2s">
                     <div class="project-card h-100 d-flex flex-column">
-                        <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="project-icon-wrap project-icon-web">
-                                <i class="fa-solid fa-layer-group"></i>
-                            </div>
-                            <div class="project-badge project-badge-web">Web App</div>
-                        </div>
-                        <h3 class="project-title">Flashcard Quiz App</h3>
-                        <p class="project-impact">
-                            <i class="fa-solid fa-bolt-lightning me-1 text-warning"></i>
-                            <strong>Impact:</strong> Interactive learning tool with offline support via localStorage.
-                        </p>
-                        <ul class="project-features flex-grow-1">
-                            <li><i class="fa-solid fa-check-circle me-2"></i>LocalStorage persistence</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Responsive UI</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Offline support</li>
-                        </ul>
-                        <div class="project-tags mt-2">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">Bootstrap</span>
-                        </div>
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-project mt-4"
-                            id="flashcard-link">
-                            <i class="fa-brands fa-github me-2"></i>View Project
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Project 4: Power BI Dashboard -->
-                <div class="col-md-6 col-lg-4 reveal">
-                    <div class="project-card h-100 d-flex flex-column">
+                        <div class="project-card-glow project-card-glow-data"></div>
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="project-icon-wrap project-icon-data">
                                 <i class="fa-solid fa-chart-column"></i>
@@ -204,22 +256,26 @@
                         <h3 class="project-title">Power BI Data Dashboard</h3>
                         <p class="project-impact">
                             <i class="fa-solid fa-bolt-lightning me-1 text-warning"></i>
-                            <strong>Impact:</strong> Business intelligence dashboard for data-driven decision making.
+                            <strong>Impact:</strong> Enterprise-grade BI dashboard transforming raw data into actionable business intelligence.
                         </p>
                         <ul class="project-features flex-grow-1">
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Interactive Visualizations</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Data Modeling</li>
-                            <li><i class="fa-solid fa-check-circle me-2"></i>Business Insights</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Interactive Drill-down Visualizations</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>Advanced Data Modeling</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>DAX Measure Calculations</li>
+                            <li><i class="fa-solid fa-check-circle me-2"></i>KPI Tracking &amp; Trend Analysis</li>
                         </ul>
                         <div class="project-tags mt-2">
                             <span class="tag">Power BI</span>
                             <span class="tag">Excel</span>
+                            <span class="tag">DAX</span>
                             <span class="tag">Data Modeling</span>
                         </div>
-                        <a href="https://github.com/Shubham-coder-a/PowerBI-Tutedude-Assignments" target="_blank"
-                            rel="noopener noreferrer" class="btn btn-project mt-4" id="powerbi-link">
-                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i>View Project
-                        </a>
+                        <div class="project-btn-group mt-auto pt-4">
+                            <a href="https://github.com/Shubham-coder-a/PowerBI-Tutedude-Assignments" target="_blank"
+                                rel="noopener noreferrer" class="btn btn-project" id="powerbi-link">
+                                💻 Source Code
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -543,7 +599,7 @@
 
                 <!-- DUHacks Certificate -->
                 <div class="col-md-6 col-lg-4 reveal">
-                    <div class="cert-card">
+                    <div class="cert-card cert-card-v">
                         <div class="cert-icon cert-icon-hackathon">
                             <i class="fa-solid fa-medal"></i>
                         </div>
@@ -555,10 +611,11 @@
                                 organized by Google Developer Groups (GDG) DDU
                                 on 24th–25th January 2026.
                             </p>
-                            <!-- Button -->
+                        </div>
+                        <div class="cert-btn-wrap mt-auto">
                             <a href="Images/certificate.jpeg" target="_blank"
-                                class="btn btn-sm btn-outline-primary mt-3">
-                                View Certificate
+                                rel="noopener noreferrer" class="btn cert-view-btn" id="duhacks-cert-btn">
+                                <i class="fa-solid fa-eye me-2"></i>View Certificate
                             </a>
                         </div>
                     </div>
@@ -566,7 +623,7 @@
 
                 <!-- CodeLite Hackathon Certificate -->
                 <div class="col-md-6 col-lg-4 reveal">
-                    <div class="cert-card">
+                    <div class="cert-card cert-card-v">
                         <div class="cert-icon cert-icon-hackathon">
                             <i class="fa-solid fa-trophy"></i>
                         </div>
@@ -574,10 +631,25 @@
                             <span class="cert-category">Hackathon</span>
                             <h3 class="cert-title">CodeLite Hackathon 2026 Participation</h3>
                             <p class="cert-desc">
-                                Official recognition for participation in CodeLite Hackathon 2026,
-                                awarded for building and presenting the Hyperlocal Secondhand Market
-                                web application under live competition conditions.
+                                Participated in CodeLite Hackathon 2026 at PDEA's College of Engineering, Pune,
+                                where I developed and presented a Hyperlocal Secondhand Marketplace under
+                                real-time competition.
                             </p>
+                        </div>
+                        <!-- Certificate Image Preview -->
+                        <a href="images/images/codelite.jpg" target="_blank" rel="noopener noreferrer"
+                            class="cert-img-preview" id="codelite-cert-img" aria-label="View CodeLite Certificate">
+                            <img src="images/images/codelite.jpg" alt="CodeLite Hackathon 2026 Certificate" />
+                            <div class="cert-img-overlay">
+                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                <span>Click to View Full Certificate</span>
+                            </div>
+                        </a>
+                        <div class="cert-btn-wrap mt-auto">
+                            <a href="images/images/codelite.jpg" target="_blank"
+                                rel="noopener noreferrer" class="btn cert-view-btn" id="codelite-cert-btn">
+                                <i class="fa-solid fa-eye me-2"></i>View Certificate
+                            </a>
                         </div>
                     </div>
                 </div>
