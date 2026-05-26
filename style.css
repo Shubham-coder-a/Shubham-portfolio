@@ -495,6 +495,7 @@ img {
 .project-card-glow-ai      { background: radial-gradient(ellipse at 50% 0%, rgba(13, 148, 136, 0.09) 0%, transparent 70%); }
 .project-card-glow-data    { background: radial-gradient(ellipse at 50% 0%, rgba(180, 83, 9, 0.09) 0%, transparent 70%); }
 .project-card-glow-featured { background: radial-gradient(ellipse at 50% 0%, rgba(78, 20, 131, 0.13) 0%, transparent 70%); }
+.project-card-glow-fintech  { background: radial-gradient(ellipse at 50% 0%, rgba(67, 56, 202, 0.10) 0%, transparent 70%); }
 
 .project-card > *:not(.project-card-glow) {
   position: relative;
@@ -790,6 +791,7 @@ img {
 .project-icon-ai  { background: linear-gradient(135deg, #0d9488, #14b8a6); box-shadow: 0 8px 24px rgba(13, 148, 136, 0.3); }
 .project-icon-web { background: linear-gradient(135deg, #0369a1, #0ea5e9); box-shadow: 0 8px 24px rgba(3, 105, 161, 0.3); }
 .project-icon-data { background: linear-gradient(135deg, #b45309, #f59e0b); box-shadow: 0 8px 24px rgba(180, 83, 9, 0.3); }
+.project-icon-fintech { background: linear-gradient(135deg, #4338ca, #7c3aed); box-shadow: 0 8px 24px rgba(67, 56, 202, 0.35); }
 
 .project-card:hover .project-icon-wrap {
   transform: rotate(-8deg) scale(1.1);
@@ -813,6 +815,7 @@ img {
 .project-badge-ai   { background: #e6fdf9; color: #0d7377; }
 .project-badge-web  { background: #e0f2fe; color: #0369a1; }
 .project-badge-data { background: #fef3c7; color: #92400e; }
+.project-badge-fintech { background: #ede9fe; color: #4338ca; }
 
 /* ── Typography ── */
 .project-title {
